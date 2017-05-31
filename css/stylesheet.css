@@ -1,0 +1,210 @@
+* {
+  font-family: segoe ui;
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  background-color: #3D5265;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.header a:hover {
+  display: inline-block;
+  transform: rotate(360deg);
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transform: rotate(360deg);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transform: rotate(360deg);
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transform: rotate(360deg);
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+header {
+  z-index: 1;
+  height: 50px;
+  width: 100%;
+  margin-top: 0;
+  background-color: #BC4333;
+}
+
+
+.featured_rightpart {
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.featured_rightpart h2 {
+  vertical-align: middle;
+  margin: 0 0 0 10px;
+  /* need this to clear the default margin */
+  margin-bottom: 0px;
+}
+
+form h2,h3 {
+  text-align: center;
+  padding: 5px;
+
+}
+
+form h3{
+    margin: 0 0 2.5em 0;
+}
+
+form {
+
+  max-width: 40%;
+  margin: 5% 30% 0 30%;
+  /*  border-left: 2px dotted #D4E04C;*/
+}
+
+span {
+  margin: 0 0 0 10px;
+}
+
+.asterisk {
+  color: yellow;
+  margin: 5px 0 0 0;
+}
+
+form label {
+  display: block;
+}
+
+
+form input {
+  background-color: #506374;
+  height: 30px;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  display: block;
+  border-style: none;
+  border-color: Transparent;
+  overflow: auto;
+}
+
+form textarea {
+  width: 100%;
+  margin: 5px 0 5px 0;
+  background-color: #506374;
+  border-style: none;
+  border-color: Transparent;
+  overflow: auto;
+  min-height: 50px;
+}
+
+.send2 {
+  width: 30%;
+  background-color: #7CB82F;
+  border-radius: 2px;
+}
+.tablelocation{
+    width: 100%;
+    background-color: #BC4333;  
+    height: auto;
+    margin-top: 5%;
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    margin: 0 30% 0 30%;
+
+}
+
+td, th {
+
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+.footer {
+  height: 160px;
+  width: 100%;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #FFA300;
+  /*#FFA300*/
+}
+
+
+
+.footer h2 {
+  text-align: center;
+  font-weight: 400;
+  padding: 20px 0 0 0;
+}
+
+.footer h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 2em;
+  padding: 30px 250px 0 0;
+}
+
+#span1 {
+  margin-right: 400px;
+}
+
+#span2 {
+  margin-left: 400px;
+}
+
+
+.navbutton{
+  font-size:30px;
+  cursor:pointer;
+  float:right;
+  margin: 3px 20px 0 0;
+  z-index: 10;"  
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
