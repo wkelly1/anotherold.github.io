@@ -106,15 +106,36 @@ form textarea {
 }
 .tablelocation{
     width: 100%;
-    background-color: #BC4333;  
+    margin-top: 110px;
+    background-color: #BC4333; 
+    position: inherit; 
     height: auto;
-    margin-top: 5%;
+}
+
+.navlocation{
+    margin-top: 22.55%;
+    color: #818181;
+    position: inherit; 
+    height: auto;
+}
+
+.navlocation li{
+    color: #818181;
+    line-height: 2em;
+}
+
+.navlocation a {
+
+    text-decoration: none;
+
+    color: #818181;
+    display: block;
+
 
 }
 
-table {
+.tablelocation table {
     font-family: arial, sans-serif;
-    border-collapse: collapse;
     width: 40%;
     margin: 0 30% 0 30%;
 
@@ -129,9 +150,11 @@ td, th {
 
 
 .footer {
-  height: 160px;
+  height: auto;
+  min-height: 200px;
   width: 100%;
   position: relative;
+    margin-bottom: 0px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -151,15 +174,29 @@ td, th {
   text-align: center;
   font-weight: 100;
   font-size: 2em;
-  padding: 30px 250px 0 0;
+  margin-top: 10px;
 }
 
-#span1 {
-  margin-right: 400px;
+.footerResized{
+  display: none;
 }
 
-#span2 {
-  margin-left: 400px;
+.secondrow li{
+  display: inline;
+  padding: 10px;
+}
+
+.left {
+  float:left;
+  margin-left: 5%;
+  margin-bottom: 2%;
+
+}
+
+.right {
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 2%;
 }
 
 
@@ -183,7 +220,7 @@ td, th {
     padding-top: 60px;
 }
 
-.sidenav a {
+nav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -192,10 +229,18 @@ td, th {
     transition: 0.3s;
 }
 
-.sidenav a:hover, .offcanvas a:focus{
+nav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
 
+body p{
+  width: 80%;
+  margin: 10px 10% 3% 10%;
+}
+
+.stock{
+  margin-left: 35%;
+}
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -203,6 +248,19 @@ td, th {
     font-size: 36px;
     margin-left: 50px;
 }
+.mapouter{
+  overflow:hidden;
+  height:700px;
+  width:100%;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:700px;
+  width:100%;
+}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -226,23 +284,57 @@ form {
   font-size: 0.8em;
 }
 
-.footer h2 {
-  display: inline;
+
+
+.left{
+  text-align: center;
+  margin-left: 25%;
 }
 
-.footer h1 {
+.right{
   text-align: center;
-  font-weight: 100;
-  font-size: 2em;
-  padding: 30px 250px 0 0;
+  float: left;
+  margin-left: 38%;
+}
+
+.footerResized {
+  display: inline;
+  height: auto;
+  width: 100%;
+  position: relative;
+  margin-bottom: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #FFA300;
+  text-decoration: none;
+  /*#FFA300*/
+}
+
+.footer li {
+  text-align: center;
+  font-weight: 400;
+  padding: 20px 0 0 0;
 }
 
 #span1 {
   display: inline-block;
+  text-align: center;
 }
 
 #span2 {
   display: inline-block;
+  text-align: center;
+}
+body{
+  overflow-x: visible;
+}
+
+.tablelocation table {
+    font-family: arial, sans-serif;
+    width: 90%;
+    margin: 0 5% 0 10%;
+
 }
 
 }
@@ -267,6 +359,7 @@ form {
 
 #span1 {
   margin-right: 10px;
+
 }
 
 #span2 {
